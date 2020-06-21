@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-feign-service-movie" />
+        <module name="springcloud-gateway" />
+        <module name="springcloud-feign-api-movie" />
+        <module name="springcloud-eureka-server" />
+        <module name="springcloud-user" />
+        <module name="springcloud-feign-api-user" />
+        <module name="springcloud-movie (1)" />
+        <module name="springcloud-movie" />
+        <module name="springcloud-feign-srvice-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-eureka-server" target="1.8" />
+      <module name="springcloud-feign-api" target="1.8" />
+      <module name="springcloud-feign-api-movie" target="1.8" />
+      <module name="springcloud-feign-api-user" target="1.8" />
+      <module name="springcloud-feign-parent" target="1.8" />
+      <module name="springcloud-feign-service" target="1.8" />
+      <module name="springcloud-feign-service-movie" target="1.8" />
+      <module name="springcloud-feign-srvice-user" target="1.8" />
+      <module name="springcloud-gateway" target="1.8" />
+      <module name="springcloud-movie" target="1.8" />
+      <module name="springcloud-movie (1)" target="1.8" />
+      <module name="springcloud-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-eureka-server" options="-parameters" />
+      <module name="springcloud-feign-api-movie" options="-parameters" />
+      <module name="springcloud-feign-api-user" options="-parameters" />
+      <module name="springcloud-feign-service-movie" options="-parameters" />
+      <module name="springcloud-feign-srvice-user" options="-parameters" />
+      <module name="springcloud-gateway" options="-parameters" />
+      <module name="springcloud-movie" options="-parameters" />
+      <module name="springcloud-user" options="-parameters" />
+    </option>
+  </component>
+</project>

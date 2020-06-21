@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server/springcloud-eureka-server.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server/springcloud-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-api/springcloud-feign-api.iml" filepath="$PROJECT_DIR$/springcloud-feign-api/springcloud-feign-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-api-movie/springcloud-feign-api-movie.iml" filepath="$PROJECT_DIR$/springcloud-feign-api-movie/springcloud-feign-api-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-api-user/springcloud-feign-api-user.iml" filepath="$PROJECT_DIR$/springcloud-feign-api-user/springcloud-feign-api-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-parent/springcloud-feign-parent.iml" filepath="$PROJECT_DIR$/springcloud-feign-parent/springcloud-feign-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-service/springcloud-feign-service.iml" filepath="$PROJECT_DIR$/springcloud-feign-service/springcloud-feign-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-service-movie/springcloud-feign-service-movie.iml" filepath="$PROJECT_DIR$/springcloud-feign-service-movie/springcloud-feign-service-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-srvice-user/springcloud-feign-srvice-user.iml" filepath="$PROJECT_DIR$/springcloud-feign-srvice-user/springcloud-feign-srvice-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-gateway/springcloud-gateway.iml" filepath="$PROJECT_DIR$/springcloud-gateway/springcloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-movie/springcloud-movie.iml" filepath="$PROJECT_DIR$/springcloud-movie/springcloud-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-user/springcloud-user.iml" filepath="$PROJECT_DIR$/springcloud-user/springcloud-user.iml" />
+    </modules>
+  </component>
+</project>

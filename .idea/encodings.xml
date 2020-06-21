@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-api-movie" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-api-movie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-api-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-api-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-service-movie" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-service-movie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-srvice-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-srvice-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-movie" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-movie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-user/src/main/java" charset="UTF-8" />
+  </component>
+</project>

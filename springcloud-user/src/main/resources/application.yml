@@ -1,0 +1,33 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /movie
+
+spring:
+  application:
+    name: user  # 服务名
+
+# 客户端配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/
+  instance:
+    prefer-ip-address: true # 是否显示实例的IP地址
+    instance-id: ${spring.application.name}:${server.port}
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+ser:
+  movie: http://MOVIE
+  user: http://USER
+  order: http://ORDER
+

@@ -1,0 +1,47 @@
+server:
+  port: 9999
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: movie
+          uri: lb://MOVIE
+          predicates:
+            - Path=/movie/*
+          filters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback2
+        - id: user
+          uri: http://localhost:9000
+          predicates:
+            - Path=/user/*
+          filters:
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@hostAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
+#          filters:
+#            - StripPrefix=1
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  application:
+    name: gateway
+
+redis:
+  host: localhost
+  port: 6379
+  database: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/
+  instance:
+    prefer-ip-address: true # 是否显示实例的IP地址
+    instance-id: ${spring.application.name}:${server.port}

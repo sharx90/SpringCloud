@@ -1,0 +1,74 @@
+
+---
+
+server:
+  port: 8001
+
+spring:
+  application:
+    name: movie  # 服务名
+  profiles: movie1
+
+# 客户端配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/
+  instance:
+    prefer-ip-address: true # 是否显示实例的IP地址
+    instance-id: ${spring.application.name}:${server.port}
+
+    # 设置发送心跳的时间
+    lease-renewal-interval-in-seconds: 1
+    # 设置最长的心跳时间
+    lease-expiration-duration-in-seconds: 2
+
+---
+
+server:
+  port: 8002
+
+spring:
+  application:
+    name: movie  # 服务名
+  profiles: movie2
+
+# 客户端配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/
+  instance:
+    prefer-ip-address: true # 是否显示实例的IP地址
+    instance-id: ${spring.application.name}:${server.port}
+
+    # 设置发送心跳的时间
+    lease-renewal-interval-in-seconds: 1
+    # 设置最长的心跳时间
+    lease-expiration-duration-in-seconds: 2
+
+---
+
+server:
+  port: 8003
+
+spring:
+  application:
+    name: movie  # 服务名
+  profiles: movie3
+
+# 客户端配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/
+  instance:
+    prefer-ip-address: true # 是否显示实例的IP地址
+    instance-id: ${spring.application.name}:${server.port}
+
+    # 设置发送心跳的时间
+    lease-renewal-interval-in-seconds: 1
+    # 设置最长的心跳时间
+    lease-expiration-duration-in-seconds: 2
+
+

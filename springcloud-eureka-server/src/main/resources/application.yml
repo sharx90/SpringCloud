@@ -1,0 +1,94 @@
+
+
+---
+
+server:
+  port: 7001
+
+spring:
+  application:
+    # 应用名称 (服务名)
+    name: server
+  profiles: server01
+
+# 注册中心配置
+eureka:
+  instance:
+    hostname: server01.com # 域名、IP地址
+  client:
+    # 是否注册服务, 当前为注册中，不需要注册
+    register-with-eureka: false
+    # 是否检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://server02.com:7002/eureka/,http://server03.com:7003/eureka/
+  server:
+    # 关闭自我保护机制
+    enable-self-preservation: false
+    # 设置剔除服务的时间
+    eviction-interval-timer-in-ms: 2000
+logging:
+  level:
+    com.netflix: warn
+
+---
+
+server:
+  port: 7002
+
+spring:
+  application:
+    # 应用名称 (服务名)
+    name: server
+  profiles: server02
+
+# 注册中心配置
+eureka:
+  instance:
+    hostname: server02.com # 域名、IP地址
+  client:
+    # 是否注册服务, 当前为注册中，不需要注册
+    register-with-eureka: false
+    # 是否检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/,http://server03.com:7003/eureka/
+  server:
+    # 关闭自我保护机制
+    enable-self-preservation: false
+    # 设置剔除服务的时间
+    eviction-interval-timer-in-ms: 2000
+logging:
+  level:
+    com.netflix: warn
+
+---
+
+server:
+  port: 7003
+
+spring:
+  application:
+    # 应用名称 (服务名)
+    name: server
+  profiles: server03
+
+# 注册中心配置
+eureka:
+  instance:
+    hostname: server03.com # 域名、IP地址
+  client:
+    # 是否注册服务, 当前为注册中，不需要注册
+    register-with-eureka: false
+    # 是否检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://server01.com:7001/eureka/,http://server02.com:7002/eureka/
+  server:
+    # 关闭自我保护机制
+    enable-self-preservation: false
+    # 设置剔除服务的时间
+    eviction-interval-timer-in-ms: 2000
+logging:
+  level:
+    com.netflix: warn

@@ -1,0 +1,9 @@
+# Project exclude paths
+/springcloud-eureka-server/target/
+/springcloud-feign-api-movie/target/
+/springcloud-feign-api-user/target/
+/springcloud-feign-service-movie/target/
+/springcloud-feign-srvice-user/target/
+/springcloud-gateway/target/
+/springcloud-movie/target/
+/springcloud-user/target/
